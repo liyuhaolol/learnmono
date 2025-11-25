@@ -1,14 +1,14 @@
 {
-  "name": "@learn/components",
+  "name": "@learnmono/utils",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.20.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liyuhaolol/learnmono.git"
+  },
+  "private": true
 }
