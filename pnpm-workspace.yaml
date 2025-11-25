@@ -1,0 +1,4 @@
+#声明子包目录
+packages:
+  - 'apps/*'
+  - 'packages/*'
