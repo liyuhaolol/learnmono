@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    //允许 TS 按照 Vite 风格从上级 node_modules 解析依赖
+    "moduleResolution": "bundler"
+  }
+}
