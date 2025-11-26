@@ -4,17 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "echo \"Error: no test specified\" && exit 1"
+    "dev:project-1": "pnpm run -F @learnmono/project-1 dev"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "https://github.com/liyuhaolol/learnmono.git"
   },
   "private": true,
   "dependencies": {
-    "@learnmono/root": "file:"
+    "@learnmono/root": "file:",
+    "vue": "^3.5.25"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.2",
     "vite": "^7.2.4"
   }
 }

@@ -3,7 +3,7 @@ import {button} from "@learnmono/ui"
 
 const oApp = document.querySelector("#app")
 
-const oButton = button("Hello Monorepo")
+const oButton = button({text:"Hello Monorepo"})
 
 oApp.innerHTML = oButton
 

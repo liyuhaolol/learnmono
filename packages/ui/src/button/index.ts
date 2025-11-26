@@ -1,3 +1,3 @@
-export default function button(text:string ){
+export default function button({text} ){
   return `<button>${text}</button>`
 }
