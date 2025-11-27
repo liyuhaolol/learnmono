@@ -1,9 +1,9 @@
 <script setup>
   import {onMounted} from "vue";
-  import {getForum} from "@learnmono/requestcenter"
+  import {getVersion} from "@learnmono/requestcenter"
 
   onMounted(() => {
-    getForum(-1)
+    getVersion()
         .then((response) => {
           console.log("返回response")
         })

@@ -1,5 +1,6 @@
-import {getForum} from "./RequestCenter";
+import {getForum,getVersion} from "./RequestCenter";
 
 export {
-  getForum
+  getForum,
+  getVersion
 }
