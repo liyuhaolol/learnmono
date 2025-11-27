@@ -1,0 +1,14 @@
+{
+  "name": "@learnmono/requestcenter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liyuhaolol/learnmono.git"
+  },
+  "private": true,
+  "dependencies": {
+    "@learnmono/network": "workspace:*"
+  }
+}

@@ -12,6 +12,7 @@
   },
   "private": true,
   "dependencies": {
+    "@learnmono/requestcenter": "workspace:*",
     "@learnmono/ui": "workspace:*",
     "@learnmono/utils": "workspace:*"
   }
