@@ -31,6 +31,47 @@ export function getRequest(url:string, params?:requestParams):Promise<AxiosRespo
   },useInterceptors,printLog)
 }
 
+//put请求
+export function putRequest(url:string,params?:requestParams){
+  const { bodyParams, headerParams, asJson = false, useInterceptors = true ,printLog = false,timeout = timeoutTime} = params || {};
+  return createRequest({
+    url: url,
+    method: 'put',
+    timeout: timeout,
+    headers: {
+      ...headerParams,
+      ...(asJson ? { 'Content-Type': 'application/json' } : {})
+    },
+    ...(asJson ? { data: bodyParams } : { params: bodyParams })
+  }, useInterceptors,printLog)
+}
+
+//delete请求
+export function deleteRequest(url:string,params?:requestParams){
+  const { bodyParams, headerParams, asJson = false, useInterceptors = true ,printLog = false,timeout = timeoutTime} = params || {};
+  return createRequest({
+    url: url,
+    method: 'delete',
+    timeout: timeout,
+    headers: {
+      ...headerParams,
+      ...(asJson ? { 'Content-Type': 'application/json' } : {})
+    },
+    ...(asJson ? { data: bodyParams } : { params: bodyParams })
+  }, useInterceptors,printLog)
+}
+
+//head请求
+export function headRequest(url:string, params?:requestParams):Promise<AxiosResponse>{
+  const {headerParams, useInterceptors = true ,printLog = false,timeout = timeoutTime} = params || {};
+  return createRequest({
+    url:url,
+    method:'head',
+    timeout:timeout,
+    headers:headerParams
+  },useInterceptors,printLog)
+}
+
 //创建请求
 function createRequest(option:AxiosRequestConfig,useInterceptors:boolean,printLog:boolean):Promise<AxiosResponse>{
   //打印请求日志,url不可能为空，除非故意
@@ -91,7 +132,7 @@ function printResponseData(url:any,body:any, header:any,printLog:boolean){
   }
 }
 
-interface requestParams {
+export interface requestParams {
   bodyParams?:Record<string,any>|undefined,//body参数键值对，对HEAD请求不生效 默认值:undefined
   headerParams?:Record<string,string>|undefined,//head参数键值对 默认值:undefined
   useInterceptors?:boolean,//是否将网络响应结果优先统一通过拦截器逻辑后判断是否拦截响应的向下传递 默认值:true

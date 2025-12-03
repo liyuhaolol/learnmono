@@ -1,5 +1,21 @@
-import {getRequest} from "./HttpClient";
+import {
+  getRequest,
+  postRequest,
+  putRequest,
+  deleteRequest,
+  headRequest,
+  requestParams} from "./HttpClient";
+import {
+  HttpFilter,
+  HttpFilterManager} from "./HttpFilter";
 
 export {
-  getRequest
+  getRequest,
+  postRequest,
+  putRequest,
+  deleteRequest,
+  headRequest,
+  requestParams,
+  HttpFilter,
+  HttpFilterManager
 }

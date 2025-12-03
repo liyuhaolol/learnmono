@@ -1,10 +1,21 @@
 {
   "name": "@learnmono/network",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/index.ts",
+  "version": "1.0.9",
+  "description": "test network",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup"
+  },
+  "files": [
+    "dist"
+  ],
   "keywords": [],
-  "author": "",
+  "author": "liyuhao",
   "license": "ISC",
-  "packageManager": "pnpm@10.20.0"
+  "packageManager": "pnpm@10.20.0",
+  "publishConfig": {
+    "registry": "http://10.10.3.81:8081/repository/npm-hosted/"
+  }
 }

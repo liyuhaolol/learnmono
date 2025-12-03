@@ -8,7 +8,7 @@
     "url": "https://github.com/liyuhaolol/learnmono.git"
   },
   "private": true,
-  "dependencies": {
+  "peerDependencies": {
     "@learnmono/network": "workspace:*"
   }
 }

@@ -1,5 +1,4 @@
-import {getRequest} from "@learnmono/network"
-import {postRequest} from "@learnmono/network/src/HttpClient";
+import {getRequest,postRequest} from "@learnmono/network"
 
 //请求栏目列表页
 export function getForum(id:number){
