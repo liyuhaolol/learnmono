@@ -14,6 +14,8 @@
   "dependencies": {
     "@learnmono/requestcenter": "workspace:*",
     "@learnmono/ui": "workspace:*",
-    "@learnmono/utils": "workspace:*"
+    "@learnmono/utils": "workspace:*",
+    "github-markdown-css": "^5.8.1",
+    "marked": "^17.0.1"
   }
 }

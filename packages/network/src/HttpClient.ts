@@ -6,6 +6,7 @@ const timeoutTime = 10000//10秒
 
 //post请求
 export function postRequest(url:string,params?:requestParams){
+  debugger
   const { bodyParams, headerParams, asJson = false, useInterceptors = true ,printLog = false,timeout = timeoutTime} = params || {};
   return createRequest({
     url: url,
