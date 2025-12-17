@@ -69,6 +69,7 @@ var HttpFilterManager = class _HttpFilterManager {
 // src/HttpClient.ts
 var timeoutTime = 1e4;
 function postRequest(url, params) {
+  debugger;
   const { bodyParams, headerParams, asJson = false, useInterceptors = true, printLog = false, timeout = timeoutTime } = params || {};
   return createRequest({
     url,

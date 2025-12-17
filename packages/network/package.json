@@ -16,6 +16,6 @@
   "license": "ISC",
   "packageManager": "pnpm@10.20.0",
   "publishConfig": {
-    "registry": "http://10.10.3.81:8081/repository/npm-hosted/"
+    "registry": "http://localhost:4873"
   }
 }
