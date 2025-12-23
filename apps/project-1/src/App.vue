@@ -53,7 +53,7 @@ const compiledMarkdown = computed(() => {
     );
 
 
-    const response = await fetch("http://testaiapi.newszu.com/aiapi/unification", {
+    const response = await fetch("http://10.8.13.49:8080/aiapi/unification", {
       method: "POST",
       body: form,
     });
